@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: orbit-independent-proxy
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /
+    envVars:
+      - key: ORBIT_PASSWORD
+        sync: false
