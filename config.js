@@ -5,7 +5,7 @@ module.exports = {
   bindingAddress: "0.0.0.0",
   port: internalPort,
   // One public port is used for both services; upstream supports same-port mode.
-  crossDomainPort: internalPort,
+  crossDomainPort: null,
 
   // The public URL is HTTPS even though Render forwards internally over HTTP.
   getServerInfo: (req) => {
